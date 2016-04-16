@@ -154,6 +154,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Banco.mdf" />
+    <Content Include="App_Data\Banco_log.ldf">
+      <DependentUpon>Banco.mdf</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>

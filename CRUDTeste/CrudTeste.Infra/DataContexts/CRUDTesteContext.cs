@@ -34,7 +34,7 @@ namespace CrudTeste.Infra.DataContexts
         }
     }
 
-    public class CRUDTesteContextInitializer : DropCreateDatabaseIfModelChanges<CRUDTesteContext>
+    public class CRUDTesteContextInitializer : CreateDatabaseIfNotExists<CRUDTesteContext>
     {
         protected override void Seed(CRUDTesteContext context)
         {
